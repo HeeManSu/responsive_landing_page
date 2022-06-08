@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo {
+  width: 70px;
+  cursor: pointer;
+  margin: 30px 5rem;
+}
+
+.navbar_links {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding-right: 8rem;
+}
+
+.navbar_links li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.navbar_links li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar_links li a:hover {
+  color: #ff5ea2;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 9%;
+  padding-left: 8%;
+}
+
+.header_info {
+  flex-basis: 40%;
+  position: relative;
+}
+
+.header_info h2 {
+  font-size: 54px;
+}
+
+.header_info h3 {
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+
+.header_info p {
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;
+}
+
+.header_info h4 {
+  width: 140px;
+  border: 0;
+  padding: 25px 0;
+}
+
+button {
+  width: 140px;
+  border: 0;
+  height: 50px;
+  padding: 12px 20px;
+  outline: none;
+  background: linear-gradient(to right, #fb5283, #ff3527);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: width 0.5s;
+  color: #fff;
+}
+
+button img {
+  width: 30px;
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_info::before {
+  content: '';
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#ff469f, #ff6062);
+  position: absolute;
+  left: -40px;
+  top: 10px;
+}
+
+.header_images {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.header_images .controller {
+  width: 90%;
+}
+
+.color_box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(#ff54a2, #ff575a);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translateX(180px);
+}
+
+.add-btn img {
+  width: 35px;
+  margin-bottom: 5px;
+}
+
+.add_btn {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  height: 13px;
+  margin: 20px;
+  cursor: pointer;
+}
